@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Surver Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="desc">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="" id="surver-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input required type="text" id="name" placeholder="Enter your name" />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input
+          required
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age (Optional)</label>
+        <input min="10" max="60" type="number" id="number" placeholder="Age" />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select name="" id="dropdown">
+          <option value hidden>Select current role</option>
+          <option value>Student</option>
+          <option value>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="radio-btn">
+          <input type="radio" name="radio-btn" value="definetly" />Definetly
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="radio-btn">
+          <input type="radio" name="radio-btn" value="definetly" />Maybe
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="radio-btn">
+          <input type="radio" name="radio-btn" value="definetly" />Not sure
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label for="">
+          <input type="checkbox" name="" id="" value="frontend" />Front-end
+          Project
+        </label>
+        <label for="">
+          <input type="checkbox" name="" id="" value="backend" />Back-end
+          Project
+        </label>
+        <label for="">
+          <input type="checkbox" name="" id="" value="data-visualizition" />Data
+          visualizition
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          name=""
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
